@@ -1,11 +1,13 @@
+
 import React from "react";
-import LoginForm from "./LoginForm";
+import { ThemeProvider } from "./ThemeContext";
+import Blog from "./Blog";
 
 function App() {
   return (
-    <div className="App">
-      <LoginForm />
-    </div>
+    <ThemeProvider>
+      <Blog />
+    </ThemeProvider>
   );
 }
 
